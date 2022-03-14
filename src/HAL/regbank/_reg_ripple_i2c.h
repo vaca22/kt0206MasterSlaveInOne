@@ -1,0 +1,10 @@
+#ifndef __REG_RIPPLE_I2C_H_
+#define __REG_RIPPLE_I2C_H_
+
+#define REG_RIPPLE_I2C_SIZE 324
+
+#define REG_RIPPLE_I2C_BASE_ADDR 0x00000000
+
+
+#endif // __REG_RIPPLE_I2C_H_
+

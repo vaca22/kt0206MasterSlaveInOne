@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167" moduleId="org.eclipse.cdt.core.settings" name="user_kt">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.andestech.ide.cdt.managedbuilder.core.CROSS_GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="adx" artifactName="muses_v2b_patch_kt" buildArtefactType="nds.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=nds.buildArtefactType.exe" description="default" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167" name="user_kt" parent="config.nds32le-elf-mculib-v3.exe.debug" postannouncebuildStep="&quot;${PWD}/output/${BuildArtifactFileBaseName}.bin&quot;" postbuildStep="nds32le-elf-objcopy -S -O binary --gap-fill=0xff  &quot;${BuildArtifactFileName}&quot;  &quot;${PWD}/output/${BuildArtifactFileBaseName}.bin&quot;;&quot;$(SolutionPath)${ProjDirPath}&quot;/src/patch/SetSPILine.exe  &quot;${PWD}/output/${BuildArtifactFileBaseName}.bin&quot;;" preannouncebuildStep="" prebuildStep="">
+					<folderInfo id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167." name="/" resourcePath="">
+						<toolChain errorParsers="" id="nds.nds32le-elf-mculib-v3.exe.debug.1869882268" name="nds32le-elf-mculib-v3" nonInternalBuilderId="target.nds32le-elf-mculib-v3.builder.exe.debug" superClass="nds.nds32le-elf-mculib-v3.exe.debug">
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.2117107134" name="RSE_TARGET" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET" value="rse://LOCALHOST/~toolchains/nds32le-elf-mculib-v3" valueType="string"/>
+							<targetPlatform binaryParser="com.andestech.ide.cdt.managedbuilder.core.CROSS_GNU_ELF" id="target.nds32le-elf-mculib-v3.platform.exe.debug.786653425" name="Debug Platform" superClass="target.nds32le-elf-mculib-v3.platform.exe.debug"/>
+							<builder buildPath="${workspace_loc:/qianhai_v1/Debug}" id="target.nds32le-elf-mculib-v3.builder.exe.debug.998325996" keepEnvironmentInBuildfile="false" name="Andes Make Builder" parallelBuildOn="true" parallelizationNumber="-10" superClass="target.nds32le-elf-mculib-v3.builder.exe.debug"/>
+							<tool id="tool.nds32le-elf-mculib-v3.archiver.base.1402710327" name="Andes Archiver" superClass="tool.nds32le-elf-mculib-v3.archiver.base"/>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug.762163478" name="Andes C++ Compiler" superClass="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug">
+								<option id="nds32le-elf-mculib-v3.cpp.compiler.exe.debug.option.debugging.level.34898212" name="Debug Level" superClass="nds32le-elf-mculib-v3.cpp.compiler.exe.debug.option.debugging.level" value="nds.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug.447868432" name="Andes C++ Linker" superClass="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug">
+								<option defaultValue="-O0" id="nds.cpp.link.option.optimization.level.1526364230" name="Optimization Level" superClass="nds.cpp.link.option.optimization.level" valueType="string"/>
+								<option defaultValue="true" id="nds32le-elf-mculib-v3.cpp.link.option.noshared.base.142765444" name="No shared libraries (-static)" superClass="nds32le-elf-mculib-v3.cpp.link.option.noshared.base" valueType="boolean"/>
+							</tool>
+							<tool command="$(CROSS_COMPILE)gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser" id="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.15885684" name="Andes C Compiler" superClass="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug">
+								<option id="nds32le-elf-mculib-v3.c.compiler.exe.debug.option.debugging.level.52556974" name="Debug Level" superClass="nds32le-elf-mculib-v3.c.compiler.exe.debug.option.debugging.level" value="nds.c.debugging.level.max" valueType="enumerated"/>
+								<option id="nds.c.compiler.option.optimization.flags.1941018401" name="Other optimization flags" superClass="nds.c.compiler.option.optimization.flags" value="-mext-dsp -mext-zol -mex9 -mifc -fdiagnostics-color=auto" valueType="string"/>
+								<option id="nds.c.compiler.option.include.paths.1045409260" name="Include paths (-I)" superClass="nds.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/API}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/HAL/cpu/mini}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/HAL/cpu}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/HAL/regbank}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/HAL/dw}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/HAL/onchip}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/HAL/audio}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/HAL/usb}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/HAL}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML/iap}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML/audio_algorithm/asrc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML/audio_algorithm/aec_ans/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML/audio_algorithm/All_effect/eft_config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML/audio_algorithm/All_effect/audio_effect_top}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML/audio_algorithm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML/audio_algorithm/All_effect/module}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML/audio_algorithm/i2s_nco}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML/info}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML/tlpool}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML/usb}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/FML}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/BLL/USB_dongle}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/BLL/USB_headphone}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/BLL/USB_headset}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/BLL/USB_test}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/BLL/TEST}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/BLL}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/APL}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/patch}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/common/ke}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/user}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/user/debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/user/usertimer}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/user/chip_config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/user/usb_config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/user/wav}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/user/user_kt}&quot;"/>
+								</option>
+								<option id="nds.c.compiler.option.misc.other.1067393207" name="Other flags" superClass="nds.c.compiler.option.misc.other" value="-c -fmessage-length=0" valueType="string"/>
+								<option id="nds32le-elf-mculib-v3.c.compiler.exe.debug.option.optimization.level.743937297" name="Optimization Level" superClass="nds32le-elf-mculib-v3.c.compiler.exe.debug.option.optimization.level" value="nds.c.optimization.level.more" valueType="enumerated"/>
+								<option id="nds.c.compiler.option.cmodel.424548051" name="Code Model" superClass="nds.c.compiler.option.cmodel" value="nds.c.compiler.option.cmodel.medium" valueType="enumerated"/>
+								<option id="nds.c.compiler.option.preprocessor.def.symbols.1870307010" name="Defined symbols (-D)" superClass="nds.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="ROM_TAPEOUT"/>
+								</option>
+								<option id="nds.c.compiler.option.optimization.removesections.function.1739878609" name="Remove unused function sections (-ffunction-sections)" superClass="nds.c.compiler.option.optimization.removesections.function" value="false" valueType="boolean"/>
+								<option id="nds.c.compiler.option.optimization.removesections.data.759854868" name="Remove unused data sections (-fdata-sections)" superClass="nds.c.compiler.option.optimization.removesections.data" value="false" valueType="boolean"/>
+								<inputType id="tool.nds.c.compiler.input.1138796474" superClass="tool.nds.c.compiler.input"/>
+							</tool>
+							<tool command="$(CROSS_COMPILE)gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GLDErrorParser" id="tool.nds32le-elf-mculib-v3.c.linker.exe.debug.1438859410" name="Andes C Linker" superClass="tool.nds32le-elf-mculib-v3.c.linker.exe.debug">
+								<option defaultValue="-O0" id="nds.c.link.option.optimization.level.771501447" name="Optimization Level" superClass="nds.c.link.option.optimization.level" value="-O2" valueType="string"/>
+								<option defaultValue="true" id="nds32le-elf-mculib-v3.c.link.option.noshared.base.274780608" name="No shared libraries (-static)" superClass="nds32le-elf-mculib-v3.c.link.option.noshared.base" valueType="boolean"/>
+								<option defaultValue="" id="nds32le-elf-mculib-v3.c.link.exe.debug.option.ldscript.262539649" name="Linker Script (-T)" superClass="nds32le-elf-mculib-v3.c.link.exe.debug.option.ldscript" value="$(LDSAG_OUT)" valueType="string"/>
+								<option id="nds.c.linker.option.cmodel.1745685153" name="Code Model" superClass="nds.c.linker.option.cmodel" value="-mcmodel=medium" valueType="string"/>
+								<option id="nds.c.link.option.nostart.1071803510" name="Do not use standard start files (-nostartfiles)" superClass="nds.c.link.option.nostart" value="true" valueType="boolean"/>
+								<option id="nds.c.link.option.ldflags.1010233543" name="Linker flags" superClass="nds.c.link.option.ldflags" value="-fno-zero-initialized-in-bss" valueType="string"/>
+								<option id="nds.c.link.option.virtualhosting.1054032390" name="Virtual Hosting (-mvh)" superClass="nds.c.link.option.virtualhosting" value="false" valueType="boolean"/>
+								<option id="nds.c.link.option.libs.404541443" name="Libraries (-l)" superClass="nds.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="muses_v2b_patch"/>
+									<listOptionValue builtIn="false" value="dsp"/>
+									<listOptionValue builtIn="false" value="c"/>
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
+								<option defaultValue="500000" id="nds32le-elf-mculib-v3.c.link.exe.debug.option.loadedProgramStartAddress.1667005152" name="Program Start Address. 0x" superClass="nds32le-elf-mculib-v3.c.link.exe.debug.option.loadedProgramStartAddress" value="" valueType="string"/>
+								<option defaultValue="3000000" id="nds32le-elf-mculib-v3.c.link.exe.debug.option.stackSize.1287897184" name="Stack Address. 0x" superClass="nds32le-elf-mculib-v3.c.link.exe.debug.option.stackSize" value="" valueType="string"/>
+								<option id="nds.c.link.option.removesections.2030716644" name="Remove unused sections (-ffunction-sections or -fdata-sections)" superClass="nds.c.link.option.removesections" value="false" valueType="boolean"/>
+								<option id="nds.c.link.option.map.863343238" name="Write a map file. (-Map)" superClass="nds.c.link.option.map" value="true" valueType="boolean"/>
+								<option id="nds.c.link.option.nostdlibs.1049041898" name="No startup or default libs (-nostdlib)" superClass="nds.c.link.option.nostdlibs" value="false" valueType="boolean"/>
+								<option id="nds.c.link.option.paths.666845237" name="Library search path (-L)" superClass="nds.c.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+								</option>
+								<inputType id="tool.nds.c.linker.input.1147616027" superClass="tool.nds.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool command="$(CROSS_COMPILE)as" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GASErrorParser" id="tool.nds32le-elf-mculib-v3.assembler.exe.debug.718156211" name="Andes Assembler" superClass="tool.nds32le-elf-mculib-v3.assembler.exe.debug">
+								<option defaultValue="-g" id="nds.both.asm.option.flags.1236830867" name="Assembler flags" superClass="nds.both.asm.option.flags" valueType="string"/>
+								<option id="nds.both.asm.option.include.paths.275294476" name="Include paths (-I)" superClass="nds.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/patch/}&quot;"/>
+								</option>
+								<inputType id="tool.nds.assembler.input.655346514" superClass="tool.nds.assembler.input"/>
+							</tool>
+							<tool command="$(CROSS_COMPILE)nm" commandLinePattern="${COMMAND} ${FLAGS} &quot;${BuildArtifactFilePrefix}${BuildArtifactFileName}&quot; ${OUTPUT_FLAG} ${OUTPUT}" errorParsers="" id="tool.nds32le-elf-mculib-v3.nm.exe.debug.928868453" name="NM (symbol listing)" superClass="tool.nds32le-elf-mculib-v3.nm.exe.debug">
+								<option id="nds.nm.option.linenumber.1507964015" name="Include line numbers and filenames in output. (-l)" superClass="nds.nm.option.linenumber" value="false" valueType="boolean"/>
+							</tool>
+							<tool command="$(CROSS_COMPILE)readelf" commandLinePattern="${COMMAND} ${FLAGS} &quot;${BuildArtifactFilePrefix}${BuildArtifactFileName}&quot; ${OUTPUT_FLAG} ${OUTPUT}" errorParsers="" id="tool.nds32le-elf-mculib-v3.readelf.exe.debug.5893583" name="Readelf (ELF info listing)" superClass="tool.nds32le-elf-mculib-v3.readelf.exe.debug">
+								<option id="nds.readelf.option.disable.107354453" name="Disable. (Do not auto-generate output file.)" superClass="nds.readelf.option.disable" value="false" valueType="boolean"/>
+							</tool>
+							<tool command="$(CROSS_COMPILE)objdump" commandLinePattern="${COMMAND} ${FLAGS} &quot;${BuildArtifactFilePrefix}${BuildArtifactFileName}&quot; ${OUTPUT_FLAG} ${OUTPUT}" errorParsers="" id="tool.nds32le-elf-mculib-v3.objdump.exe.debug.10215076" name="Objdump (disassembly)" superClass="tool.nds32le-elf-mculib-v3.objdump.exe.debug">
+								<option id="nds.objdump.option.disable.765073026" name="Disable. (Do not auto-generate output file.)" superClass="nds.objdump.option.disable" value="false" valueType="boolean"/>
+								<option id="nds.objdump.option.linenumber.1924270197" name="Include line numbers and filenames in output. (-l)" superClass="nds.objdump.option.linenumber" value="true" valueType="boolean"/>
+							</tool>
+							<tool command="$(CROSS_COMPILE)objcopy" commandLinePattern="${COMMAND} ${FLAGS} &quot;${BuildArtifactFilePrefix}${BuildArtifactFileName}&quot; ${OUTPUT}" errorParsers="" id="tool.nds32le-elf-mculib-v3.objcopy.exe.debug.1717867965" name="Objcopy (object content copy)" superClass="tool.nds32le-elf-mculib-v3.objcopy.exe.debug">
+								<option id="nds.objcopy.option.disable.1367953218" name="Disable. (Do not auto-generate output file.)" superClass="nds.objcopy.option.disable" value="true" valueType="boolean"/>
+								<option id="nds.objcopy.option.outputformat.2108930593" name="Create an output file in format" superClass="nds.objcopy.option.outputformat" value="nds.objcopy.option.outputformat.binary" valueType="enumerated"/>
+								<option id="nds.objcopy.option.otherflags.1262959829" name="Other flags" superClass="nds.objcopy.option.otherflags" value="--gap-fill=0xff" valueType="string"/>
+							</tool>
+							<tool command="$(CROSS_COMPILE)size" commandLinePattern="${COMMAND} ${FLAGS} &quot;${BuildArtifactFilePrefix}${BuildArtifactFileName}&quot;  ${OUTPUT_FLAG} ${OUTPUT}" errorParsers="" id="tool.nds32le-elf-mculib-v3.size.exe.debug.1870414063" name="Size (section size listing)" superClass="tool.nds32le-elf-mculib-v3.size.exe.debug">
+								<option id="nds.size.option.disable.803681783" name="Disable. (Do not auto-generate output file.)" superClass="nds.size.option.disable" value="false" valueType="boolean"/>
+							</tool>
+							<tool command="$(ANDESIGHT_ROOT)/utils/nds_ldsag" commandLinePattern="${COMMAND} ${FLAGS} ${INPUTS} ${OUTPUT_FLAG} $(LDSAG_OUT)" errorParsers="" id="tool.nds32le-elf-mculib-v3.ldsag.exe.debug.1416294902" name="LdSaG Tool" superClass="tool.nds32le-elf-mculib-v3.ldsag.exe.debug">
+								<option id="nds.ldsag.option.sagscript.55087417" name="SaG file" superClass="nds.ldsag.option.sagscript" value="../muses-xip.sag" valueType="string"/>
+								<option id="nds.ldsag.option.enablement.1753650582" name="Generate linker script" superClass="nds.ldsag.option.enablement" value="true" valueType="boolean"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/API/api.h" name="api.h" rcbsApplicability="disable" resourcePath="src/API/api.h" toolsToInvoke=""/>
+					<fileInfo id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/FML/audio_algorithm/All_effect/audio_effect_top/DongleEffect_top.h" name="DongleEffect_top.h" rcbsApplicability="disable" resourcePath="src/FML/audio_algorithm/All_effect/audio_effect_top/DongleEffect_top.h" toolsToInvoke=""/>
+					<fileInfo id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/FML/audio_algorithm/All_effect/audio_effect_top/DspEffect_top.h" name="DspEffect_top.h" rcbsApplicability="disable" resourcePath="src/FML/audio_algorithm/All_effect/audio_effect_top/DspEffect_top.h" toolsToInvoke=""/>
+					<fileInfo id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/FML/audio_algorithm/All_effect/eft_config/DongleEftCfg.h" name="DongleEftCfg.h" rcbsApplicability="disable" resourcePath="src/FML/audio_algorithm/All_effect/eft_config/DongleEftCfg.h" toolsToInvoke=""/>
+					<fileInfo id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/FML/audio_algorithm/All_effect/eft_config/DspEftCfg.h" name="DspEftCfg.h" rcbsApplicability="disable" resourcePath="src/FML/audio_algorithm/All_effect/eft_config/DspEftCfg.h" toolsToInvoke=""/>
+					<folderInfo id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/BLL/USB_headset" name="/" resourcePath="src/BLL/USB_headset">
+						<toolChain id="nds.nds32le-elf-mculib-v3.exe.debug.1660525953" name="nds32le-elf-mculib-v3" superClass="nds.nds32le-elf-mculib-v3.exe.debug" unusedChildren="">
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.1304176698.1891439065.607452493" name="RSE_TARGET" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.1304176698"/>
+							<targetPlatform id="target.nds32le-elf-mculib-v3.platform.exe.debug.1384007086" name="Debug Platform" superClass="target.nds32le-elf-mculib-v3.platform.exe.debug"/>
+							<tool id="tool.nds32le-elf-mculib-v3.archiver.base.1259434584" name="Andes Archiver" superClass="tool.nds32le-elf-mculib-v3.archiver.base.1402710327"/>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug.1841758269" name="Andes C++ Compiler" superClass="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug.762163478"/>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug.338150398" name="Andes C++ Linker" superClass="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug.447868432"/>
+							<tool id="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1834832492" name="Andes C Compiler" superClass="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.15885684">
+								<inputType id="tool.nds.c.compiler.input.576196601" superClass="tool.nds.c.compiler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.c.linker.exe.debug.465672563" name="Andes C Linker" superClass="tool.nds32le-elf-mculib-v3.c.linker.exe.debug.1438859410"/>
+							<tool id="tool.nds32le-elf-mculib-v3.assembler.exe.debug.1450317205" name="Andes Assembler" superClass="tool.nds32le-elf-mculib-v3.assembler.exe.debug.718156211">
+								<inputType id="tool.nds.assembler.input.646524958" superClass="tool.nds.assembler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.nm.exe.debug.894737763" name="NM (symbol listing)" superClass="tool.nds32le-elf-mculib-v3.nm.exe.debug.928868453"/>
+							<tool id="tool.nds32le-elf-mculib-v3.readelf.exe.debug.145437559" name="Readelf (ELF info listing)" superClass="tool.nds32le-elf-mculib-v3.readelf.exe.debug.5893583"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objdump.exe.debug.1571304732" name="Objdump (disassembly)" superClass="tool.nds32le-elf-mculib-v3.objdump.exe.debug.10215076"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objcopy.exe.debug.105845037" name="Objcopy (object content copy)" superClass="tool.nds32le-elf-mculib-v3.objcopy.exe.debug.1717867965"/>
+							<tool id="tool.nds32le-elf-mculib-v3.size.exe.debug.1290835738" name="Size (section size listing)" superClass="tool.nds32le-elf-mculib-v3.size.exe.debug.1870414063"/>
+							<tool id="tool.nds32le-elf-mculib-v3.ldsag.exe.debug.1803992419" name="LdSaG Tool" superClass="tool.nds32le-elf-mculib-v3.ldsag.exe.debug.1416294902"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/BLL/USB_headphone" name="/" resourcePath="src/BLL/USB_headphone">
+						<toolChain id="nds.nds32le-elf-mculib-v3.exe.debug.554244235" name="nds32le-elf-mculib-v3" superClass="nds.nds32le-elf-mculib-v3.exe.debug" unusedChildren="">
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.1304176698.508606417.1323074069" name="RSE_TARGET" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.1304176698"/>
+							<targetPlatform id="target.nds32le-elf-mculib-v3.platform.exe.debug.1208028877" name="Debug Platform" superClass="target.nds32le-elf-mculib-v3.platform.exe.debug"/>
+							<tool id="tool.nds32le-elf-mculib-v3.archiver.base.2057901752" name="Andes Archiver" superClass="tool.nds32le-elf-mculib-v3.archiver.base.1402710327"/>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug.316658525" name="Andes C++ Compiler" superClass="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug.762163478"/>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug.1840849047" name="Andes C++ Linker" superClass="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug.447868432"/>
+							<tool id="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.676920450" name="Andes C Compiler" superClass="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.15885684">
+								<inputType id="tool.nds.c.compiler.input.1650024381" superClass="tool.nds.c.compiler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.c.linker.exe.debug.1415062533" name="Andes C Linker" superClass="tool.nds32le-elf-mculib-v3.c.linker.exe.debug.1438859410"/>
+							<tool id="tool.nds32le-elf-mculib-v3.assembler.exe.debug.222714608" name="Andes Assembler" superClass="tool.nds32le-elf-mculib-v3.assembler.exe.debug.718156211">
+								<inputType id="tool.nds.assembler.input.773748270" superClass="tool.nds.assembler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.nm.exe.debug.2095967189" name="NM (symbol listing)" superClass="tool.nds32le-elf-mculib-v3.nm.exe.debug.928868453"/>
+							<tool id="tool.nds32le-elf-mculib-v3.readelf.exe.debug.1262832335" name="Readelf (ELF info listing)" superClass="tool.nds32le-elf-mculib-v3.readelf.exe.debug.5893583"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objdump.exe.debug.1353808418" name="Objdump (disassembly)" superClass="tool.nds32le-elf-mculib-v3.objdump.exe.debug.10215076"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objcopy.exe.debug.1525040407" name="Objcopy (object content copy)" superClass="tool.nds32le-elf-mculib-v3.objcopy.exe.debug.1717867965"/>
+							<tool id="tool.nds32le-elf-mculib-v3.size.exe.debug.585457460" name="Size (section size listing)" superClass="tool.nds32le-elf-mculib-v3.size.exe.debug.1870414063"/>
+							<tool id="tool.nds32le-elf-mculib-v3.ldsag.exe.debug.1278095810" name="LdSaG Tool" superClass="tool.nds32le-elf-mculib-v3.ldsag.exe.debug.1416294902"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/BLL/USB_typec_to_35" name="/" resourcePath="src/BLL/USB_typec_to_35">
+						<toolChain id="nds.nds32le-elf-mculib-v3.exe.debug.516547443" name="nds32le-elf-mculib-v3" superClass="nds.nds32le-elf-mculib-v3.exe.debug" unusedChildren="">
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.1304176698.423601134.787465588" name="RSE_TARGET" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.1304176698"/>
+							<targetPlatform id="target.nds32le-elf-mculib-v3.platform.exe.debug.1894792261" name="Debug Platform" superClass="target.nds32le-elf-mculib-v3.platform.exe.debug"/>
+							<tool id="tool.nds32le-elf-mculib-v3.archiver.base.1990554701" name="Andes Archiver" superClass="tool.nds32le-elf-mculib-v3.archiver.base.1402710327"/>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug.1927841083" name="Andes C++ Compiler" superClass="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug.762163478"/>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug.2037099463" name="Andes C++ Linker" superClass="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug.447868432"/>
+							<tool id="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1235154950" name="Andes C Compiler" superClass="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.15885684">
+								<inputType id="tool.nds.c.compiler.input.854666200" superClass="tool.nds.c.compiler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.c.linker.exe.debug.348570296" name="Andes C Linker" superClass="tool.nds32le-elf-mculib-v3.c.linker.exe.debug.1438859410"/>
+							<tool id="tool.nds32le-elf-mculib-v3.assembler.exe.debug.1946776429" name="Andes Assembler" superClass="tool.nds32le-elf-mculib-v3.assembler.exe.debug.718156211">
+								<inputType id="tool.nds.assembler.input.47846155" superClass="tool.nds.assembler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.nm.exe.debug.332990308" name="NM (symbol listing)" superClass="tool.nds32le-elf-mculib-v3.nm.exe.debug.928868453"/>
+							<tool id="tool.nds32le-elf-mculib-v3.readelf.exe.debug.735096134" name="Readelf (ELF info listing)" superClass="tool.nds32le-elf-mculib-v3.readelf.exe.debug.5893583"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objdump.exe.debug.744462799" name="Objdump (disassembly)" superClass="tool.nds32le-elf-mculib-v3.objdump.exe.debug.10215076"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objcopy.exe.debug.1798724279" name="Objcopy (object content copy)" superClass="tool.nds32le-elf-mculib-v3.objcopy.exe.debug.1717867965"/>
+							<tool id="tool.nds32le-elf-mculib-v3.size.exe.debug.1604435347" name="Size (section size listing)" superClass="tool.nds32le-elf-mculib-v3.size.exe.debug.1870414063"/>
+							<tool id="tool.nds32le-elf-mculib-v3.ldsag.exe.debug.2147048442" name="LdSaG Tool" superClass="tool.nds32le-elf-mculib-v3.ldsag.exe.debug.1416294902"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/BLL/USB_test" name="/" resourcePath="src/BLL/USB_test">
+						<toolChain id="nds.nds32le-elf-mculib-v3.exe.debug.2071798892" name="nds32le-elf-mculib-v3" superClass="nds.nds32le-elf-mculib-v3.exe.debug" unusedChildren="">
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.1304176698.1443983394.758778646" name="RSE_TARGET" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.1304176698"/>
+							<targetPlatform id="target.nds32le-elf-mculib-v3.platform.exe.debug.2104150104" name="Debug Platform" superClass="target.nds32le-elf-mculib-v3.platform.exe.debug"/>
+							<tool id="tool.nds32le-elf-mculib-v3.archiver.base.1616369578" name="Andes Archiver" superClass="tool.nds32le-elf-mculib-v3.archiver.base.1402710327"/>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug.802418925" name="Andes C++ Compiler" superClass="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug.762163478"/>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug.1628292965" name="Andes C++ Linker" superClass="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug.447868432"/>
+							<tool id="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1544571133" name="Andes C Compiler" superClass="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.15885684">
+								<inputType id="tool.nds.c.compiler.input.762354471" superClass="tool.nds.c.compiler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.c.linker.exe.debug.723743478" name="Andes C Linker" superClass="tool.nds32le-elf-mculib-v3.c.linker.exe.debug.1438859410"/>
+							<tool id="tool.nds32le-elf-mculib-v3.assembler.exe.debug.75415296" name="Andes Assembler" superClass="tool.nds32le-elf-mculib-v3.assembler.exe.debug.718156211">
+								<inputType id="tool.nds.assembler.input.1518035553" superClass="tool.nds.assembler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.nm.exe.debug.2052352490" name="NM (symbol listing)" superClass="tool.nds32le-elf-mculib-v3.nm.exe.debug.928868453"/>
+							<tool id="tool.nds32le-elf-mculib-v3.readelf.exe.debug.691329633" name="Readelf (ELF info listing)" superClass="tool.nds32le-elf-mculib-v3.readelf.exe.debug.5893583"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objdump.exe.debug.105275692" name="Objdump (disassembly)" superClass="tool.nds32le-elf-mculib-v3.objdump.exe.debug.10215076"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objcopy.exe.debug.1635175848" name="Objcopy (object content copy)" superClass="tool.nds32le-elf-mculib-v3.objcopy.exe.debug.1717867965"/>
+							<tool id="tool.nds32le-elf-mculib-v3.size.exe.debug.1194453289" name="Size (section size listing)" superClass="tool.nds32le-elf-mculib-v3.size.exe.debug.1870414063"/>
+							<tool id="tool.nds32le-elf-mculib-v3.ldsag.exe.debug.948895762" name="LdSaG Tool" superClass="tool.nds32le-elf-mculib-v3.ldsag.exe.debug.1416294902"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/BLL/USB_dongle" name="/" resourcePath="src/BLL/USB_dongle">
+						<toolChain id="nds.nds32le-elf-mculib-v3.exe.debug.350593473" name="nds32le-elf-mculib-v3" superClass="nds.nds32le-elf-mculib-v3.exe.debug" unusedChildren="">
+							<option id="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.1304176698.1904877197.294681796" name="RSE_TARGET" superClass="nds32le-elf-mculib-v3.managedbuild.option.toolchain.RSE_TARGET.1304176698"/>
+							<targetPlatform id="target.nds32le-elf-mculib-v3.platform.exe.debug.1549411645" name="Debug Platform" superClass="target.nds32le-elf-mculib-v3.platform.exe.debug"/>
+							<tool id="tool.nds32le-elf-mculib-v3.archiver.base.274524355" name="Andes Archiver" superClass="tool.nds32le-elf-mculib-v3.archiver.base.1402710327"/>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug.987035490" name="Andes C++ Compiler" superClass="tool.nds32le-elf-mculib-v3.cpp.compiler.exe.debug.762163478"/>
+							<tool id="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug.548009584" name="Andes C++ Linker" superClass="tool.nds32le-elf-mculib-v3.cpp.linker.exe.debug.447868432"/>
+							<tool id="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.917811707" name="Andes C Compiler" superClass="tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.15885684">
+								<inputType id="tool.nds.c.compiler.input.1864539083" superClass="tool.nds.c.compiler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.c.linker.exe.debug.1002923437" name="Andes C Linker" superClass="tool.nds32le-elf-mculib-v3.c.linker.exe.debug.1438859410"/>
+							<tool id="tool.nds32le-elf-mculib-v3.assembler.exe.debug.1073619403" name="Andes Assembler" superClass="tool.nds32le-elf-mculib-v3.assembler.exe.debug.718156211">
+								<inputType id="tool.nds.assembler.input.1878666087" superClass="tool.nds.assembler.input"/>
+							</tool>
+							<tool id="tool.nds32le-elf-mculib-v3.nm.exe.debug.1161041630" name="NM (symbol listing)" superClass="tool.nds32le-elf-mculib-v3.nm.exe.debug.928868453"/>
+							<tool id="tool.nds32le-elf-mculib-v3.readelf.exe.debug.2114598654" name="Readelf (ELF info listing)" superClass="tool.nds32le-elf-mculib-v3.readelf.exe.debug.5893583"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objdump.exe.debug.368538077" name="Objdump (disassembly)" superClass="tool.nds32le-elf-mculib-v3.objdump.exe.debug.10215076"/>
+							<tool id="tool.nds32le-elf-mculib-v3.objcopy.exe.debug.833210111" name="Objcopy (object content copy)" superClass="tool.nds32le-elf-mculib-v3.objcopy.exe.debug.1717867965"/>
+							<tool id="tool.nds32le-elf-mculib-v3.size.exe.debug.1354966174" name="Size (section size listing)" superClass="tool.nds32le-elf-mculib-v3.size.exe.debug.1870414063"/>
+							<tool id="tool.nds32le-elf-mculib-v3.ldsag.exe.debug.864330511" name="LdSaG Tool" superClass="tool.nds32le-elf-mculib-v3.ldsag.exe.debug.1416294902"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="user/user_gaoyuke_T8|user/user_gaoyuke_T7|user/user_qiyin|user/user_gaoyuke_T6|user/user_chuangxiang|user/user_gaoyuke|user/user_furuijie|FML/audio_algorithm/All_effect/eft_config/DspEftCfg.h|FML/audio_algorithm/All_effect/eft_config/DspEftCfg.c|FML/audio_algorithm/All_effect/eft_config/DongleEftCfg.h|FML/audio_algorithm/All_effect/eft_config/DongleEftCfg.c|FML/audio_algorithm/All_effect/audio_effect_top/DspEffect_top.h|FML/audio_algorithm/All_effect/audio_effect_top/DongleEffect_top.h|FML/audio_algorithm/All_effect/audio_effect_top/DspEffect_top.c|FML/audio_algorithm/All_effect/audio_effect_top/DongleEffect_top.c|BLL/USB_headset|BLL/USB_headphone|BLL/USB_dongle|BLL/USB_test|BLL/USB_typec_to_35|user_demo|plf/top|test|BLL/TEST|APL/TEST" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="demo-ls1.target.nds32le-elf-mculib-v3.exe.307624926" name="Andes Executable" projectType="target.nds32le-elf-mculib-v3.exe"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/qianhai_v1"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203.1031787299;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.749612970;tool.nds.c.compiler.input.1920292281">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366.src/user/user_furuijie;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.2064094711;tool.nds.c.compiler.input.1460741106">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203.src/BLL/USB_dongle;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1412524314;tool.nds.c.compiler.input.1998917066">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.414437363;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1923729918;tool.nds.c.compiler.input.1499970056">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1243588975;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1511195931;tool.nds.c.compiler.input.2066063240">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.1266898809;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1343761255;tool.nds.c.compiler.input.1350267572">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251.867812903;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1065715935;tool.nds.c.compiler.input.1549050282">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.src/BLL/USB_headset;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.427001810;tool.nds.c.compiler.input.139860608">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366.src/BLL/USB_test;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1613936802;tool.nds.c.compiler.input.1838680987">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.607194967;tool.nds.c.compiler.input.1803923821">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203.1915375961;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.957055584;tool.nds.c.compiler.input.94530966">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.15885684;tool.nds.c.compiler.input.1138796474">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.1959358361;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.770537973;tool.nds.c.compiler.input.1427717294">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.1093308073;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.756183174;tool.nds.c.compiler.input.1829565857">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.src/BLL/USB_headphone;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.206085132;tool.nds.c.compiler.input.162144281">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.src/BLL/USB_test;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1254724918;tool.nds.c.compiler.input.1653425346">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.src/BLL/USB_headphone;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.394727685;tool.nds.c.compiler.input.133322143">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.src/BLL/USB_typec_to_35;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1311084616;tool.nds.c.compiler.input.1664283052">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251.src/BLL/USB_headset;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.405959829;tool.nds.c.compiler.input.1691109532">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.871678745;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1287156261;tool.nds.c.compiler.input.883681421">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369;config.nds32le-elf-mculib-v3.exe.debug.221524369.1234839982;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1313891330;tool.nds.c.compiler.input.546260375">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716.src/BLL/USB_test;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.205988814;tool.nds.c.compiler.input.1874970750">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716.src/user/user_gaoyuke_T6;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.575677292;tool.nds.c.compiler.input.1587568421">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.961213466;config.nds32le-elf-mculib-v3.exe.debug.221524369.961213466.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.331556571;tool.nds.c.compiler.input.428269252">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128;config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128.src/BLL/USB_headphone;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.339796108;tool.nds.c.compiler.input.717223742">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203.src/user/user_gaoyuke;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1016302917;tool.nds.c.compiler.input.1755492657">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.src/BLL/USB_headset;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1997590290;tool.nds.c.compiler.input.475308475">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.release.1337957785.665767877;config.nds32le-elf-mculib-v3.exe.release.1337957785.665767877.;tool.nds32le-elf-mculib-v3.c.compiler.exe.release.42251899;tool.nds.c.compiler.input.1995674306">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369;config.nds32le-elf-mculib-v3.exe.debug.221524369.1251437141;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.2141848342;tool.nds.c.compiler.input.1673539987">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.src/user/user_gaoyuke;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1365545183;tool.nds.c.compiler.input.726878615">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203.src/BLL/USB_typec_to_35;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.2091868196;tool.nds.c.compiler.input.669289359">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.478347775;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1435538396;tool.nds.c.compiler.input.1253730673">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366.src/BLL/USB_headphone;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1051223393;tool.nds.c.compiler.input.2043993503">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366.src/BLL/USB_headset;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1399334703;tool.nds.c.compiler.input.1335886008">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257;config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257.1489967467;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.860221413;tool.nds.c.compiler.input.135598215">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.863907536;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.554294769;tool.nds.c.compiler.input.1982400314">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257;config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257.src/BLL/USB_headphone;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.729310596;tool.nds.c.compiler.input.968025986">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/BLL/USB_test;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1544571133;tool.nds.c.compiler.input.762354471">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.2091358852;tool.nds.c.compiler.input.1698185852">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.709340264;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.332694007;tool.nds.c.compiler.input.1271449310">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251.src/BLL/USB_typec_to_35;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.2113892396;tool.nds.c.compiler.input.48146037">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251.src/BLL/USB_test;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1991751125;tool.nds.c.compiler.input.1403914748">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.956974048;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.382903628;tool.nds.c.compiler.input.1223420299">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.972494828;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.143222700;tool.nds.c.compiler.input.1396499802">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/BLL/USB_dongle;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.917811707;tool.nds.c.compiler.input.1864539083">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128;config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128.src/BLL/USB_headset;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.389565511;tool.nds.c.compiler.input.1329412300">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257;config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257.src/BLL/USB_dongle;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.583747819;tool.nds.c.compiler.input.1118340064">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/BLL/USB_headphone;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.676920450;tool.nds.c.compiler.input.1650024381">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257;config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257.src/BLL/USB_headset;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.2017094017;tool.nds.c.compiler.input.1900280986">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1283984575;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.348802474;tool.nds.c.compiler.input.1736715536">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251.src/BLL/USB_dongle;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1717149103;tool.nds.c.compiler.input.1286590616">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203.src/BLL/USB_test;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1150230169;tool.nds.c.compiler.input.1007301568">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366.779405041;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1429717788;tool.nds.c.compiler.input.1487661268">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366.src/BLL/USB_dongle;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1766816785;tool.nds.c.compiler.input.250061580">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251.src/BLL/USB_headphone;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1230491411;tool.nds.c.compiler.input.1174994208">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.460675614;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.601304807;tool.nds.c.compiler.input.34490924">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369;config.nds32le-elf-mculib-v3.exe.debug.221524369.914674793;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.438614970;tool.nds.c.compiler.input.1391332024">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251.src/user/user_furuijie;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.2104363768;tool.nds.c.compiler.input.893955536">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251.src/user/user_gaoyuke_T6;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.946344559;tool.nds.c.compiler.input.1944217960">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/BLL/USB_headset;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1834832492;tool.nds.c.compiler.input.576196601">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.540012509;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1974481583;tool.nds.c.compiler.input.40876914">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.src/BLL/USB_test;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.736678143;tool.nds.c.compiler.input.1853240773">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.src/BLL/USB_typec_to_35;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1817150064;tool.nds.c.compiler.input.1886366012">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1117177468;tool.nds.c.compiler.input.2074662568">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.src/BLL/USB_headphone;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.786471110;tool.nds.c.compiler.input.1272185415">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.src/BLL/USB_dongle;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.876788151;tool.nds.c.compiler.input.248094998">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.1538373349;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.543700806;tool.nds.c.compiler.input.1044187790">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.src/BLL/USB_dongle;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.53019534;tool.nds.c.compiler.input.769504980">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.2045297179;config.nds32le-elf-mculib-v3.exe.debug.2045297179.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1302594130;tool.nds.c.compiler.input.120711874">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369;config.nds32le-elf-mculib-v3.exe.debug.221524369.1285386401;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.460711928;tool.nds.c.compiler.input.102299774">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.912181685;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1108072937;tool.nds.c.compiler.input.1548891814">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203.src/BLL/USB_headphone;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.684838198;tool.nds.c.compiler.input.1903798405">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1429537675;tool.nds.c.compiler.input.228991471">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716.src/user/user_furuijie;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1142227440;tool.nds.c.compiler.input.372042601">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.1703302004;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.605164568;tool.nds.c.compiler.input.358647690">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.2010767865;tool.nds.c.compiler.input.423408486">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716.src/user/user_gaoyuke;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1421697084;tool.nds.c.compiler.input.1170418075">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128;config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.316923384;tool.nds.c.compiler.input.749428076">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.1815561447;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.653144315;tool.nds.c.compiler.input.1332453571">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366.2113692855;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.191451505;tool.nds.c.compiler.input.507135719">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.958413918;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.282631470;tool.nds.c.compiler.input.855031783">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257;config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1406872794;tool.nds.c.compiler.input.1441079157">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.1956803407;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1018101379;tool.nds.c.compiler.input.1770432216">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.33987821;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.65244760;tool.nds.c.compiler.input.556776358">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716.src/BLL/USB_headphone;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1154475220;tool.nds.c.compiler.input.519685570">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369;config.nds32le-elf-mculib-v3.exe.debug.221524369.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1951337978;tool.nds.c.compiler.input.1595173610">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369;config.nds32le-elf-mculib-v3.exe.debug.221524369.981925108;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.526860950;tool.nds.c.compiler.input.1218892395">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128;config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128.src/BLL/USB_test;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.180833686;tool.nds.c.compiler.input.2010593233">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716.299580826;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1558505666;tool.nds.c.compiler.input.20146260">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.1877481536;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1951809594;tool.nds.c.compiler.input.1215683897">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.282870387;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.578542890;tool.nds.c.compiler.input.1925297162">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366.src/BLL/USB_typec_to_35;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1008807227;tool.nds.c.compiler.input.71749406">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.release.1337957785;config.nds32le-elf-mculib-v3.exe.release.1337957785.;tool.nds32le-elf-mculib-v3.c.compiler.exe.release.883218927;tool.nds.c.compiler.input.1105928212">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.303020796;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1935294059;tool.nds.c.compiler.input.865109462">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716.src/BLL/USB_dongle;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.906117639;tool.nds.c.compiler.input.1519005780">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.936556366.1687034524;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1323003632;tool.nds.c.compiler.input.924864768">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.src/BLL/USB_typec_to_35;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1235154950;tool.nds.c.compiler.input.854666200">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716.1280384925;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.345369455;tool.nds.c.compiler.input.1506297282">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257;config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257.src/BLL/USB_test;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1996133593;tool.nds.c.compiler.input.1419828514">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.src/BLL/USB_headset;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1675413611;tool.nds.c.compiler.input.1520128658">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1576139974;tool.nds.c.compiler.input.916370902">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203.;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1115393016;tool.nds.c.compiler.input.1998203120">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1358282268;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1263581599;tool.nds.c.compiler.input.1260992109">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257;config.nds32le-elf-mculib-v3.exe.debug.221524369.64506257.src/BLL/USB_typec_to_35;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1714344405;tool.nds.c.compiler.input.529439494">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439;config.nds32le-elf-mculib-v3.exe.debug.221524369.1109572439.2113421764;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1429537675.2124256755;tool.nds.c.compiler.input.184247259">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.1675823251.src/user/user_gaoyuke;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.542233094;tool.nds.c.compiler.input.996275223">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.2045297179;config.nds32le-elf-mculib-v3.exe.debug.2045297179.;tool.nds32le-elf-mculib-v3.c.compiler.base.127992338;tool.nds.c.compiler.input.673142944">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.src/user/user_kt;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.854252141;tool.nds.c.compiler.input.1905934504">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203.src/BLL/USB_headset;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1479270246;tool.nds.c.compiler.input.232916870">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.7486203.src/user/user_furuijie;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1708678289;tool.nds.c.compiler.input.1803101275">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369;config.nds32le-elf-mculib-v3.exe.debug.221524369.138757735;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1311817079;tool.nds.c.compiler.input.147858821">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716.src/BLL/USB_headset;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1416544286;tool.nds.c.compiler.input.212269756">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128;config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128.src/BLL/USB_typec_to_35;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1714450077;tool.nds.c.compiler.input.1894046262">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.src/BLL/USB_dongle;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1905519953;tool.nds.c.compiler.input.61572377">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.491973370;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.125219073;tool.nds.c.compiler.input.1636072039">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.release.1941716091;config.nds32le-elf-mculib-v3.exe.release.1941716091.;tool.nds32le-elf-mculib-v3.c.compiler.exe.release.321245894;tool.nds.c.compiler.input.1994179346">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.src/BLL/USB_test;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1252792890;tool.nds.c.compiler.input.1296798534">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716;config.nds32le-elf-mculib-v3.exe.debug.221524369.1264229167.353992716.src/BLL/USB_typec_to_35;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.69402077;tool.nds.c.compiler.input.1339253299">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128;config.nds32le-elf-mculib-v3.exe.debug.221524369.1107044128.src/BLL/USB_dongle;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1934989477;tool.nds.c.compiler.input.1054692856">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.555648185;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.505901831;tool.nds.c.compiler.input.1475548223">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118;config.nds32le-elf-mculib-v3.exe.debug.221524369.1532711520.1749511118.src/BLL/USB_typec_to_35;tool.nds32le-elf-mculib-v3.c.compiler.exe.debug.1935277737;tool.nds.c.compiler.input.408655633">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.andestech.ide.cdt.managedbuilder.core.ndsManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

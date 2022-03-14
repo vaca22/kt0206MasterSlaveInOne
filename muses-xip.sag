@@ -1,0 +1,179 @@
+USER_SECTIONS .startup_1
+USER_SECTIONS .startup_1_dbg
+USER_SECTIONS ._start
+
+USER_SECTIONS .EMPTY_SECTOR
+USER_SECTIONS .OTPDFT_SECTOR
+
+USER_SECTIONS .ROM_ABS_SECTION
+USER_SECTIONS .FLASH_REG_DSP_KEY_SECTION
+USER_SECTIONS .FLASH_STUDY_DATA_KEY_SECTION
+USER_SECTIONS .FLASH_DATA_CONTENT_SECTION
+USER_SECTIONS .FLASH_OTHER_KEY_SECTION
+USER_SECTIONS .FLASH_CFG_SECTION
+USER_SECTIONS .FLASH_WAV_SECTION0
+USER_SECTIONS .FLASH_WAV_SECTION1
+USER_SECTIONS .FLASH_USER_SAVE_SECTION1
+
+;USER_SECTIONS .VERINFO
+INCLUDE "muses_v2b_symbol.txt"
+
+ROM 0x0 0x10000
+{
+	ROM1 0x0 0x10000
+	{
+		*(.EMPTY_SECTOR)
+	}
+}
+
+;ROM_Reset 0x0 0x400
+;{
+;    ROM_IN_Reset 0x0 0x400
+;    {
+;        *(.startup_1) 
+;        ;*(.startup_1_dbg)   
+;        ;*(._start)
+;        ;*(.ke_event_get)
+;    }
+;}
+;
+;ROM_STARTS 0x400 0x280
+;{
+;    ROM_IN_STARTS 0x400 0x280
+;    {
+;        *(._start)
+;        *init_default.o (+RO)
+;        ;*(._start1)
+;    }
+;}
+;
+;ROM_ABS 0x680 0x180
+;{
+;    ROB_ABS_IN  0x680 0x180
+;    {
+;        *(.ROM_ABS_SECTION)
+;    }
+;}
+;
+;ROM 0x800 0x1F800
+;{
+;	ROM_IN 0x800 0x1F800
+;	{
+;	    VAR _ILM_BASE = 0x00000 ; ILM base address
+;	    VAR _ILM_SIZE = 0x40000 ; 256KB
+;		VAR _DLM_BASE = 0x40000 ; DLM base address
+;		VAR _DLM_SIZE = 0x40000 ; 256KB
+;		;* (.vector)
+;		* EXCLUDE_FILE(*audio_out.o *KT0656M_drv.o *flash_info.o ) (+RO)
+;		* (+RO)
+;	}
+;	DATA1 0x54000 0x4000
+;	{
+;		LOADADDR NEXT __data1_lma_start
+;		ADDR NEXT __data1_start
+;		* EXCLUDE_FILE(*audio_out.o *KT0656M_drv.o *flash_info.o) (+RW)
+;		* (+RW)
+;		LOADADDR __data1_lma_end
+;		ADDR NEXT __bss1_start
+;		* EXCLUDE_FILE(*audio_out.o *KT0656M_drv.o *flash_info.o) (+ZI)
+;		* (+ZI)
+;		ADDR __bss1_end
+;;		STACK = 0x5C000
+;		STACK = 0x58000
+;	}
+;}
+
+FLASH_OTHER_KEY 0x84000 0x400
+{
+    FLASH_OTHER_KEY_IN  0x84000 0x400
+    {
+        *(.FLASH_OTHER_KEY_SECTION)
+    }
+}
+
+FLASH_OTPDFT 0x84400 0x400
+{
+    FLASH_OTPDFT_IN 0x84400 0x400
+    {
+        *(.OTPDFT_SECTOR)
+    }
+}
+
+FLASH_CFGDFT 0x84800 0x400
+{
+    FLASH_CFGDFT_IN 0x84800 0x400
+    {
+        *(.FLASH_CFG_SECTION)
+    }
+}
+
+
+FLASH_START 0x84c00 0x1b400
+{
+    FLASH_START_IN 0x84c00 0x1b400
+    {
+        *(+RO)
+    }
+    DATA2 0x52000 0x2000 ;8KB
+	{
+		LOADADDR NEXT __data2_lma_start
+        ADDR NEXT __data2_start
+        * (+RW LMA_FORCE_ALIGN)
+        LOADADDR __data2_lma_end
+        
+        ADDR NEXT __bss2_start
+        * (+ZI LMA_FORCE_ALIGN)
+        ADDR __bss2_end
+        
+		STACK = 0x58000
+	}
+}
+
+FLASH_USERDFT0 0xa4000 0x19000
+{
+    FLASH_WAVDFT0_IN 0xa4000 0x19000
+    {
+        *(.FLASH_WAV_SECTION0)
+    }
+}
+
+FLASH_USERDFT1 0xc0000 0x20000
+{
+    FLASH_WAVDFT1_IN 0xc0000 0x20000
+    {
+        *(.FLASH_WAV_SECTION1)
+    }
+}
+
+FLASH_USERDFT2 0xe0000 0x1000
+{
+    FLASH_USER_SAVE_IN 0xe0000 0x1000
+    {
+        *(.FLASH_USER_SAVE_SECTION1)
+    }
+}
+
+;
+;FLASH_REG_DSP_KEY 0xDDC00 0x10
+;{
+;    FLASH_REG_DSP_KEY_IN  0xDDC00 0x10
+;    {
+;        *(.FLASH_REG_DSP_KEY_SECTION)
+;    }
+;}
+;
+;FLASH_STUDY_DATA_KEY 0xDEC00 0x10
+;{
+;    FLASH_STUDY_DATA_KEY_IN  0xDEC00 0x10
+;    {
+;        *(.FLASH_STUDY_DATA_KEY_SECTION)
+;    }
+;}
+;
+;FLASH_DATA_CONTENT 0xDF000 0x100
+;{
+;    FLASH_DATA_CONTENT_IN  0xDF000 0x100
+;    {
+;        *(.FLASH_DATA_CONTENT_SECTION)
+;    }
+;}

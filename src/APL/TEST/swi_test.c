@@ -1,0 +1,209 @@
+/**
+ ****************************************************************************************
+ *
+ * @file plf_init.c
+ *
+ * @brief Main loop of the application.
+ *
+ * @author WeighSong
+ *
+ *
+ * Copyright (C) RivieraWaves 2009-2013
+ *
+ ****************************************************************************************
+ */
+
+/*
+ * INCLUDES
+ ****************************************************************************************
+ */
+
+#include "arch.h"
+#include "co_math.h"
+#include "ke.h"
+#include "ke_event.h"
+
+#include "syscntl.h"
+#include "i2c.h"
+#include "uart.h"
+#include "intc.h"
+#include "timer.h"
+
+#include "tlpool.h"
+#include "plf.h"
+
+#include "comm.h"
+#include "config.h"
+//#include "interrupt.h"
+//#include "sys_init.h"
+#include "cache.h"
+#include "dw_uart.h"
+
+#include "audio.h"
+#include "swi.h"
+
+/**
+ ****************************************************************************************
+ * @addtogroup DRIVERS
+ * @{
+ *
+ *
+ * ****************************************************************************************
+ */
+
+
+/*
+ * MACRO DEFINITIONS
+ ****************************************************************************************
+ */
+#define PATCH_MAGIC_NUM_LEN                 4
+
+const uint8_t EMPTY[2] __attribute__((section(".EMPTY_SECTOR"))) = {};
+/*
+ * STRUCTURE DEFINITIONS
+ ****************************************************************************************
+ */
+typedef struct main_ftable_stru {
+    uint8_t magic_num[PATCH_MAGIC_NUM_LEN];
+    int (*init)(void);
+    void (*schedule)(void);
+    void (*sleep_check)(void);
+} main_ftable_t;
+
+
+/*
+ * LOCAL FUNCTION DECLARATIONS
+ ****************************************************************************************
+ */
+__STATIC int plf_init(void);
+__STATIC void plf_schedule(void);
+__STATIC void plf_sleep_check(void);
+
+
+/*
+ * LOCAL VARIABLE DEFINITIONS
+ ****************************************************************************************
+ */
+
+/// Patch magic number keyword
+const __STATIC uint32_t patch_magic_number[PATCH_MAGIC_NUM_LEN] = {'P', 'T', 'C', 'H'};
+
+/// Patch functions table
+const main_ftable_t patch_ftable __attribute__((section(".PATCH_TABLE_SECTION"))) = {
+    .magic_num = {'P', 'T', 'C', 'H'},
+    .init = plf_init,
+    .schedule = plf_schedule,
+    .sleep_check = plf_sleep_check
+};
+
+
+/*
+ * LOCAL FUNCTION DEFINITIONS
+ ****************************************************************************************
+ */
+
+__STATIC char uart_rcv[64];
+
+__STATIC void uart_read_done(uart_size_t transfered)
+{
+    LOG_DEBUG("uart rcv[%d(0x%X)]:", transfered, transfered);
+    tlpool_write(uart_rcv, transfered);
+    log_printf("\r\n");
+    log_dump_hex(uart_rcv, transfered);
+    log_printf("\r\n");
+
+    uart_read((uint8_t *)uart_rcv, 64, uart_read_done);
+}
+
+__STATIC int plf_init(void)
+{
+    /*
+     ************************************************************************************
+     * Platform initialization
+     ************************************************************************************
+     */
+
+    // Initialize random process
+    srand(1);
+
+    ke_init();
+
+    // Initialize I2C component
+    i2c_init();
+
+    // Initialize System Control module
+    syscntl_init();
+
+    // Initialize the Interrupt Controller
+    intc_init();
+
+    // Initialize the timer components
+    tim_init();
+
+    // Initialize the UART components
+    uart_init();
+
+    tlpool_init();
+
+#if PLF_DEBUG
+    log_output = tlpool_write;
+    dbg_get_time_ms = tim_cur_ms_get;
+    log_lvl_enabled[LOG_LVL_OTHER] = 1;
+    log_lvl_enabled[LOG_LVL_DEBUG] = 1;
+    log_lvl_enabled[LOG_LVL_INFO] = 1;
+    log_lvl_enabled[LOG_LVL_ERROR] = 1;
+#endif /* if PLF_DEBUG */
+
+    GLOBAL_INT_START();
+
+    LOG_INFO("Plf init done");
+
+    uart_read((uint8_t *)uart_rcv, 64, uart_read_done);
+
+    return 0;
+}
+
+__STATIC void plf_sleep_check(void)
+{
+}
+
+__STATIC void plf_schedule(void)
+{
+    ke_event_schedule();
+}
+
+
+
+extern char uart_str[];
+
+int main(void) {
+
+	//OTP_Operate();
+
+    //switch clock
+
+    //wait XTALOK
+
+    //TODO - cache test
+    cache_on();
+
+    // Initialize the Interrupt Controller
+    intc_init();
+
+    //Sys_Init();
+    intc_enable_set(INTC_ID_SWI, SWI_ISR);
+
+	GLOBAL_INT_START();
+
+	DEBUG_GPIO5_CLR();
+	DEBUG_GPIO6_CLR();
+
+//	uart_puts("uart_puts\n");
+
+    while(1) {
+        //TODO - add Event FSM loop
+        //TEST
+    	Delay_Ms(255);
+        Gen_SWI();
+    }
+}
